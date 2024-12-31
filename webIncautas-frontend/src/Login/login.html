@@ -1,0 +1,48 @@
+<div class="modal2" id="modal-containerIniciarSession">
+  <div class="modal2-content">
+      <!-- Parte izquierda: Imagen -->
+      <div class="modal2-left">
+          <img src="/fotos/fotoPrincipal.jpg" alt="Imagen lateral">
+      </div>
+
+      <!-- Parte derecha: Formulario -->
+      <div class="modal2-right">
+          <!-- Botón de cierre en la esquina superior derecha -->
+          <button class="modal2-close-button close-button">&times;</button>
+
+          <div class="form-container">
+              <h1 data-translate="memberSignIn"></h1> <!-- Título dinámico -->
+              <form id="login-form">
+                  <!-- Etiqueta de Username -->
+                  <label for="username" data-translate="username"></label>
+                  <input type="text" id="username" 
+                         data-translate-placeholder="loginUsernamePlaceholder" 
+                         placeholder="Username" required>
+
+                  <!-- Etiqueta de Password -->
+                  <label for="password" data-translate="password"></label>
+                  <input type="password" id="password" 
+                         data-translate-placeholder="loginPasswordPlaceholder" 
+                         placeholder="Password" required>
+
+                  <!-- Mensaje de error -->
+                  <div id="error-message" data-translate style="display: none; color: red; margin-bottom: 10px;">
+                      <!-- Aquí aparecerá el mensaje de error -->
+                  </div>
+
+                  <!-- Botón de enviar -->
+                  <button type="submit" id="enter-btn" data-translate="signIn"></button>
+
+                  <!-- Texto para registro -->
+                  <label class="lab">
+                      <span data-translate="donYet"></span>
+                      <a href="#" id="openCreateAccountModal" class="hiper" data-translate="registerHere"></a>
+                  </label>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="login.js" defer></script>
+<script src="../translate.js" defer></script>

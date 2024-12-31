@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/createAccount/createAccount.css">
+<div class="modal3" id="modal-containerCreateAccount">
+  <div class="modal3-content">
+    <!-- Parte izquierda: Imagen -->
+    <div class="modal3-left">
+      <img src="/fotos/createAccount.jpg" alt="Imagen lateral">
+    </div>
+
+    <!-- Parte derecha: Formulario -->
+    <div class="modal3-right">
+      <!-- Botón de cierre en la esquina superior derecha -->
+      <button class="modal3-close-button close-button">&times;</button>
+
+      <div class="form-container">
+        <h1 data-translate="createAccount">Create a new Incautas account</h1>
+        <form id="create-account-form">
+          <label for="newUsername" data-translate="username">Username:</label>
+          <input type="text" id="newUsername" data-translate-placeholder="createAccountUsernamePlaceholder"
+            placeholder="Username" required />
+
+          <label for="newPassword" data-translate="password">Password:</label>
+          <input type="password" id="newPassword" data-translate-placeholder="createAccountPasswordPlaceholder"
+            placeholder="Password" required />
+
+          <label for="email" data-translate="email">Email:</label>
+          <input type="email" id="email" data-translate-placeholder="createAccountEmailPlaceholder" placeholder="Email"
+            required />
+            <div id="error-message2" data-translate style="display: none; color: red; margin-bottom: 10px;">
+              <!-- Aquí aparecerá el mensaje de error -->
+            </div>
+          <button type="submit" id="create-account-btn" data-translate="createAccountButton">Create Account</button>
+          <label class="lab">
+            <span data-translate="haveAccount">Already have an account?</span>
+            <a href="#" id="loginModalContainer" class="hiper" data-translate="signIn">Sign in here!</a>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="createAccount.js"></script>
+  <script src="../Login/login.js"></script>
+  <script src="../translate.js"></script>
+
+
+</div>

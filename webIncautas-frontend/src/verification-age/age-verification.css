@@ -1,0 +1,68 @@
+/* Estilo del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo transparente oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.modal-content h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-buttons #enter-btn {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-buttons #enter-btn:hover {
+    background-color: rgb(255, 102, 0);
+}
+
+.modal-buttons #exit-btn {
+    background-color: rgb(95, 10, 10);
+    color: white;
+}
+
+.modal-buttons #exit-btn:hover {
+    background-color: rgb(180, 15, 15);
+}
+
+/* Ocultar contenido de la página por defecto */
+body.modal-active main,
+body.modal-active header,
+body.modal-active footer {
+    display: none;
+}

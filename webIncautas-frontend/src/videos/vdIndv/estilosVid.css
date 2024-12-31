@@ -1,0 +1,38 @@
+.cuadradoVid {
+    display: flex; /* Activa el modelo Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    height: 60vh; /* Asegura que ocupe toda la altura de la ventana */
+    padding: 0; /* Elimina el padding superior */
+    background-color: #272727; /* Color de fondo opcional */
+    padding-top: 30px; /* Reduce el padding a la mitad */
+}
+
+/* Tags */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las etiquetas salten a una nueva línea */
+  gap: 10px; /* Espaciado entre las etiquetas */
+  margin-top: 20px; /* Espacio entre el video y las etiquetas */
+  justify-content: flex-start; /* Alinea las etiquetas al inicio del video */
+  max-width: 640px; /* Ajusta al ancho del video */
+  margin-left: auto; /* Centra horizontalmente en relación al video */
+  margin-right: auto; /* Centra horizontalmente en relación al video */
+  padding: 10px; /* Opcional: Espaciado interno */
+}
+
+.tag {
+  background-color: orange;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black; /* Cambia el texto a negro */
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; /* Quita el subrayado */
+  transition: background-color 0.3s;
+}
+
+.tag:hover {
+  background-color: darkorange;
+}

@@ -1,0 +1,122 @@
+/* Contenedor general */
+.profile-container {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Pestañas */
+.tabs ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabs li {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #444;
+    transition: background-color 0.3s ease;
+}
+
+.tabs li:hover, .tabs li.active-tab {
+    background: #ff9f00;
+    color: black;
+    font-weight: bold;
+}
+
+/* Contenido de pestañas */
+.tab-content {
+    margin-top: 20px;
+}
+
+.tab-section {
+    display: none;
+}
+
+.tab-section.active {
+    display: block;
+}
+
+/* Secciones colapsables */
+.collapsible-section {
+    margin: 20px 0;
+    background: #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.toggle-section {
+    background: #ff9f00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.section-body {
+    display: none;
+    padding: 10px 0;
+}
+
+.section-body.active {
+    display: block;
+}
+
+/* Formularios */
+form fieldset {
+    border: 1px solid #444;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+}
+
+/* Botones */
+button {
+    background: #ff9f00;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e69500;
+}

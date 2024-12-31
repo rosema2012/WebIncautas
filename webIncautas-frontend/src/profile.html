@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femdom Amateur</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favicon.png" type="image/x-icon">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="estilosPrincipales.css">
+    <link rel="stylesheet" href="videos/videos.css">
+    <link rel="stylesheet" href="profile.css">
+
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="headerDivido">
+                <div class="header-left">
+                    <h1>Femdom Amateur</h1>
+                </div>
+                <div class="header-right">
+                    <!-- Enlace para abrir el modal -->
+                    <div id="user-profile" class="user-profile">
+                        <div class="profile-picture">
+                            <img id="user-image" src="/fotos/photo.png" alt="User Photo" />
+                        </div>
+                        <p id="user-name">Username</p>
+                        <div id="dropdown-menu" class="dropdown-menu">
+                            <a href="/profile.html" id="profile-link">Profile</a>
+                            <a href="#" id="logout-link">Logout
+                                <span class="logout-icon">
+                                    <img src="/fotos/logout.png" alt="Logout Icon" />
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center;">
+                        <!-- Selector de idioma -->
+                        <div class="language-dropdown" style="position: relative;">
+                            <button id="languageButton" class="language-main-button">
+                                <span>ES</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+                                    alt="ES" class="flag">
+                            </button>
+                            <div id="languageOptions" class="language-options">
+                                <button class="language-option" data-lang="en">
+                                    <span>EN</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"
+                                        alt="EN" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="es">
+                                    <span>ES</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+                                        alt="ES" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="fr">
+                                    <span>FR</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+                                        alt="FR" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="gr">
+                                    <span>GR</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png"
+                                        alt="GR" class="flag">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../indexPersonal.html" data-translate="inicio">Inicio</a></li>
+                <li><a href="../videos/paginacion/videosPersonal.html" data-translate="videos">Videos</a></li>
+                <li><a href="../categorias/categoriasPersonal.html" data-translate="categorias">Categorías</a></li>
+                <li><a href="../contactos/contactosPersonal.html" data-translate="contactos">Contactos</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <!-- Formulario de búsqueda -->
+    <div class="cambiarTamaño">
+        <form class="search-form" action="../../search/searchPersonal.html" method="GET">
+            <div class="form-item">
+                <input type="text" name="query" class="search-input" placeholder="Buscar Videos"
+                    data-translate-placeholder="placeholder_search">
+            </div>
+            <!-- Botón en la segunda columna -->
+            <div class="form-item">
+                <button type="submit" class="search-button">
+                    <img src="../../fotos/lupa-icon.png" alt="Buscar" class="button-image">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- Sección principal -->
+    <main>
+        <div class="profile-container">
+            <!-- Pestañas de navegación -->
+            <nav class="tabs">
+                <ul>
+                    <li class="active-tab" data-section="profile">Member Profile</li>
+                    <li data-section="security">Security</li>
+                    <li data-section="preferences">Account Preferences</li>
+                    <li data-section="blocklist">Block List</li>
+                    <li data-section="delete">Delete Account</li>
+                    <li data-section="verify">Get Verified</li>
+                </ul>
+            </nav>
+
+            <!-- Contenido de cada sección -->
+            <div class="tab-content">
+                <!-- Member Profile -->
+                <div id="profile" class="tab-section active">
+                    <h2>Profile and Cover Picture</h2>
+                    <div class="collapsible-section">
+                        <div class="section-header">
+                            <span>Profile picture</span>
+                            <button class="toggle-section">-</button>
+                        </div>
+                        <div class="section-body">
+
+                        </div>
+                        <div class="section-header">
+                            <span>Personal Information</span>
+                            <button class="toggle-section">-</button>
+                        </div>
+                        <div class="section-body">
+                            <form>
+                                <fieldset>
+                                    <legend>Basic Information</legend>
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" placeholder="Enter your name" />
+
+                                    <label for="birthday">Birthday:</label>
+                                    <input type="number" id="year" placeholder="YYYY" maxlength="4" />
+                                    <input type="number" id="month" placeholder="MM" maxlength="2" />
+                                    <input type="number" id="day" placeholder="DD" maxlength="2" />
+                                    <small>Please contact support to change your birthday.</small>
+
+                                    <label for="gender">Gender:</label>
+                                    <select id="gender">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+
+                                    <label for="relationship">* Relationship Status:</label>
+                                    <select id="relationship">
+                                        <option value="single">Single</option>
+                                        <option value="married">Married</option>
+                                        <option value="divorced">Divorced</option>
+                                    </select>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Contact Information</legend>
+                                    <label for="website">Personal Website:</label>
+                                    <input type="url" id="website" placeholder="https://example.com" />
+
+                                    <label for="hometown">Hometown:</label>
+                                    <input type="text" id="hometown" placeholder="Enter your hometown" />
+
+                                    <label for="current-city">Current City:</label>
+                                    <input type="text" id="current-city" placeholder="Enter your current city" />
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security -->
+                <div id="security" class="tab-section">
+                    <h2>Security Settings</h2>
+                    <p>Configure your account security here.</p>
+                </div>
+
+                <!-- Account Preferences -->
+                <div id="preferences" class="tab-section">
+                    <h2>Account Preferences</h2>
+                    <p>Customize your account preferences here.</p>
+                </div>
+
+                <!-- Block List -->
+                <div id="blocklist" class="tab-section">
+                    <h2>Block List</h2>
+                    <p>Manage your block list here.</p>
+                </div>
+
+                <!-- Delete Account -->
+                <div id="delete" class="tab-section">
+                    <h2>Delete Account</h2>
+                    <p>Delete your account permanently here.</p>
+                </div>
+
+                <!-- Get Verified -->
+                <div id="verify" class="tab-section">
+                    <h2>Get Verified</h2>
+                    <p>Start your verification process here.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Contenedor del modal de login -->
+    <div id="modal-containerIniciarSession"></div>
+
+    <!-- Contenedor del modal de crear cuenta -->
+    <div id="modal-containerCreateAccount"></div>
+
+    <div id="modal-container"></div>
+    <script src="categorias/categorias.js"></script>
+    <script src="indexPersonal.js"></script>
+    <script src="verification-age/age-verification.js"></script>
+    <script src="../../translate.js"></script>
+    <script src="/Login/login.js"></script>
+    <script src="profile.js"></script>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p data-translate="footer_message">&copy; 2024 Femdom Amateur World. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

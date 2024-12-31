@@ -1,0 +1,503 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #272727; /* Color de fondo opcional */
+    color: white;
+}
+
+/* Encabezado */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.headerDivido {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Título a la izquierda, botón al final */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Título centrado */
+.header-left {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+}
+
+/* Botón de inicio de sesión */
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-right .login-button {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    text-decoration: none; /* Quitar subrayado */
+    width: 15px;
+    height: 25px;
+    display: flex;              /* Agregado */
+    align-items: center;        /* Agregado: centra verticalmente */
+    justify-content: center;    /* Agregado: centra horizontalmente */
+    padding: 10px 15px;
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-button img{
+    width: 30px;
+    height: 30px;
+}
+
+.header-right .login-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Estilo general del menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo cuando el enlace está activo */
+nav ul li a.activo {
+    background-color: orange;
+    color: black;
+}
+
+/* Efecto al pasar el ratón por encima */
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #222;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3300;
+}
+
+/* Botones de navegación en la descripción principal */
+.botones-navegacion {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botones-navegacion button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botones-navegacion button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Estilo para el contenedor de la presentación */
+.presentacion {
+    text-align: center; /* Centrar el texto dentro del contenedor */
+    padding: 20px;      /* Espaciado interno */
+    background-color: #272727; /* Color de fondo opcional */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    max-width: 900px;    /* Ancho máximo */
+    margin: 20px auto;   /* Centrarse horizontalmente */
+}
+
+.presentacion h2 {
+    font-size: 2.5em;    /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: white;         /* Color del título */
+}
+
+.presentacion button{
+    color:#222;
+    font-weight: bold; /* Aplica texto en negrita */
+}
+
+/*Mensaje por defecto categorias*/
+#mensaje-default {
+    display: block; /* Asegúrate de que sea visible al cargar la página */
+    text-align: center;
+    color: gray;
+}
+
+
+
+/* Sección de contacto */
+#contactos {
+    padding: 40px;
+    background-color: #4e4e4e;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#contactos h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#contactos p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Alinea elementos al ancho del contenedor */
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+label {
+    font-weight: bold;
+    text-align: left; /* Alinea las etiquetas a la izquierda */
+    color: white;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none; /* Evita el cambio de tamaño del textarea */
+}
+
+/* Botón de envío */
+button {
+    background-color: orange;
+    color: #222;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
+/* Sección de categorías destacadas */
+#categorias-destacadas {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #272727;
+    color:white;
+}
+
+#categorias-destacadas h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color:white;
+}
+
+/* Contenedor de imágenes */
+.imagenes-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagen-categoria {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #272727;
+    color:white;
+}
+
+.imagen-categoria:hover {
+    transform: scale(1.2); /* Cambia el tamaño de la imagen al estar encima */
+}
+
+.imagen-categoria.active {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen */
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+
+/* Descripción de la categoría */
+#descripcion-categoria {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffffa9;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none; /* Ocultar inicialmente */
+}
+
+#descripcion-categoria h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+#descripcion-categoria p {
+    font-size: 1em;
+    color: #555;
+}
+
+#boton-categoria {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#boton-categoria:hover {
+    background-color: #e69500;
+}
+
+
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+.language-dropdown {
+    position: relative; /* Relativo al contenedor padre */
+  }
+  
+  .language-main-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    background: #ff9f00; /* Fondo del botón principal */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 70px; /* Tamaño consistente */
+    height: 40px; /* Igualar el alto */
+    padding: 5px 10px; /* Espaciado interno */
+    margin-left: 5px;
+  }
+  
+  .language-main-button:hover{
+    background-color: #fff;
+  }
+
+  .language-main-button .flag {
+    width: 20px;
+    height: auto;
+  }
+  
+  .language-options {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Relativo al contenedor padre */
+    top: 100%; /* Justo debajo del botón principal */
+    left: 0; /* Alinear al lado izquierdo del botón */
+    background: white; /* Fondo blanco */
+    border-radius: 5px;
+    z-index: 10;
+    width: 120px; /* Igualar el ancho al del botón principal */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70px;
+    margin-left: 10px;
+  }
+  
+  .language-options button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px; /* Coincidir con el padding del botón principal */
+    width: 100%; /* Ancho completo del contenedor */
+    background: #fff; /* Fondo blanco */
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente igual */
+    height: 40px; /* Igualar el alto */
+    font-weight: bold;
+  }
+  
+  .language-options button:hover {
+    background-color: #ff9f00; /* Fondo amarillo al pasar el ratón */
+    color: black;
+  }
+  
+  .language-options img {
+    width: 20px; /* Tamaño fijo para las banderas */
+    height: auto;
+  }
+  
+  /* Mostrar el menú cuando está abierto */
+  .language-dropdown.open .language-options {
+    display: block; /* Mostrar el menú cuando está abierto */
+  }
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ccc; /* Gris por defecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff; /* Borde blanco */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#user-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Contenedor del perfil */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative; /* Para posicionar el menú desplegable */
+}
+
+.profile-picture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+#user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+    z-index: 1000;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center; /* Alinear verticalmente el texto y el ícono */
+    justify-content: space-between; /* Separar texto e ícono */
+    padding: 10px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    color: #fff; /* Color del texto */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+
+
+.logout-icon img {
+    width: 16px; /* Tamaño del ícono */
+    height: 16px;
+    margin-left: 10px; /* Espacio entre el texto y el ícono */
+    vertical-align: middle; /* Alinear verticalmente al texto */
+}

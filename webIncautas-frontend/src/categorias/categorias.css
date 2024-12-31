@@ -1,0 +1,36 @@
+
+.imagenes-categorias{
+    padding-top: 50px;
+}
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre las imágenes */
+    background-color: #000; /* Fondo negro */
+    padding: 20px; /* Espaciado alrededor */
+}
+
+.category-item {
+    text-align: center; /* Centra el texto debajo de las imágenes */
+    color: #fff; /* Texto blanco */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+.category-item img {
+    width: 200px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.category-title {
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.category-item:hover {
+    transform: scale(1.1); /* Cambia el tamaño de la imagen al estar encima */
+    transition: transform 0.4s ease;
+}
+
+

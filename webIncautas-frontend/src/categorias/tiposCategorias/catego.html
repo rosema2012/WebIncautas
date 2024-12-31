@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon/favicon.png" type="png">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="../../estilosPrincipales.css">
+    <link rel="stylesheet" href="../../videos/videos.css">
+    <link rel="stylesheet" href="catego.css">
+    <script src="../../Login/login.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="headerDivido">
+                <div class="header-left">
+                    <h1>Femdom Amateur</h1>
+                </div>
+                <div class="header-right">
+                    <!-- Enlace para abrir el modal -->
+                    <a href="#" id="openModal" class="login-button">
+                        <img src="/fotos/log.png" alt="Iniciar Sesión" />
+                    </a>
+                    <div style="display: flex; align-items: center;">
+                        <!-- Selector de idioma -->
+                        <div class="language-dropdown" style="position: relative;">
+                            <button id="languageButton" class="language-main-button">
+                                <span>ES</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+                                    alt="ES" class="flag">
+                            </button>
+                            <div id="languageOptions" class="language-options">
+                                <button class="language-option" data-lang="en">
+                                    <span>EN</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"
+                                        alt="EN" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="es">
+                                    <span>ES</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+                                        alt="ES" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="fr">
+                                    <span>FR</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+                                        alt="FR" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="gr">
+                                    <span>GR</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png"
+                                        alt="GR" class="flag">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../videos/paginacion/videos.html">Videos</a></li>
+                <li><a href="../../categorias/categorias.html" class="activo">Categorías</a></li>
+                <li><a href="../../contactos/contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Formulario de búsqueda -->
+    <div class="cambiarTamaño">
+        <form class="search-form" action="../../search/search.html" method="GET">
+            <div class="form-item">
+                <input type="text" name="query" class="search-input" placeholder="Buscar Videos"
+                    data-translate-placeholder="placeholder_search">
+            </div>
+            <!-- Botón en la segunda columna -->
+            <div class="form-item">
+                <button type="submit" class="search-button">
+                    <img src="../../fotos/lupa-icon.png" alt="Buscar" class="button-image">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <body>
+        <!-- Título dinámico de la categoría -->
+        <h1 data-translate=""></h1><h1 id="category-title">Categoría</h1>
+        <div id="videos-container" class="video-grid">
+            <!-- Aquí se generará dinámicamente el contenido -->
+        </div>
+       <!-- Contenedor del modal de login -->
+       <div id="modal-containerIniciarSession"></div>
+
+       <!-- Contenedor del modal de crear cuenta -->
+       <div id="modal-containerCreateAccount"></div>
+
+        <script src="../../verification-age/age-verification.js"></script>
+    </body>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p data-translate="footer_message">&copy; 2024 Femdom Amateur World. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../../translate.js"></script>
+    <script src="catego.js"></script>
+
+
+</body>
+
+</html>

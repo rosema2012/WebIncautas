@@ -1,0 +1,192 @@
+/* Contenedor principal */
+.cambiarTamaño {
+    display: grid; /* Habilita grid */
+    margin: 20px; /* Espaciado alrededor */
+}
+
+/* Formulario con 2 columnas */
+.search-form {
+    display: grid; /* Grid layout */
+    grid-template-columns: 1fr 40px; /* 1 columna flexible (textbox) y 1 columna fija (botón) */
+    gap: 0; /* Sin espacio entre columnas */
+    align-items: center; /* Centrado vertical */
+    width: fit-content; /* Ajusta al contenido */
+}
+
+/* Elementos del formulario */
+.form-item {
+    margin: 0; /* Elimina márgenes innecesarios */
+}
+
+/* Textbox */
+.search-input {
+    width: 200px; /* Ancho fijo */
+    height: 35px; /* Altura */
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-right: none; /* Elimina borde derecho */
+    border-radius: 4px 0 0 4px; /* Bordes redondeados a la izquierda */
+    box-sizing: border-box;
+}
+
+/* Botón */
+.search-button {
+    width: 40px; /* Ancho fijo */
+    height: 35px; /* Igual altura al input */
+    background-color: orange;
+    border-left: none; /* Elimina borde izquierdo */
+    border-radius: 0 4px 4px 0; /* Bordes redondeados a la derecha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #fff;
+}
+
+/* Ícono de lupa */
+.search-button i {
+    color: white;
+    font-size: 16px; /* Tamaño del ícono */
+}
+/* Imagen dentro del botón */
+.button-image {
+    width: 20px; /* Ancho de la imagen */
+    height: 20px; /* Altura de la imagen */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+}
+
+
+.video-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 40px auto;
+    max-width: 1200px;
+    height: auto;
+    
+}
+
+
+
+.video-item {
+    background: rgba(255, 255, 255, 0.116);
+    border: 1px solid #dddddd3f;
+    border-radius: 8px;
+    height: 175px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.336);
+    position: relative; /* Necesario para posicionar elementos hijos con position absolute */
+
+}
+
+.video-item:hover {
+    transform: scale(0.9);
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+}
+
+.video-item h2 {
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    height: 3em;
+    line-height: 1.05em;
+    
+}
+
+
+.video-item .duration {
+    position: absolute;
+    display: block;
+    margin-top: -5px;
+    color: gray;
+    font-size: 12px;
+}
+
+.video-item p{
+    background-color: #222;
+    border-radius: 5px;
+    color: white;
+    width: 22%;
+    margin-left: 75%;
+    margin-bottom: 70%;
+    position:absolute;
+    top:75%;
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: orange;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination a:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+.pagination a.active {
+    background-color: #222;
+    color: white;
+    cursor: default;
+    cursor: not-allowed;
+}
+
+.pagination a:focus {
+    outline: 2px solid darkorange;
+}
+
+.pagination a:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+
+.pagination-button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.pagination-button.active {
+    background-color: darkorange;
+}
+
+.pagination-button:hover {
+    background-color: #ff6600;
+}
+

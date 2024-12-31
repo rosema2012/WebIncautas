@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femdom Amateur</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon/favicon.png" type="png">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="../estilosPrincipales.css">
+    <link rel="stylesheet" href="../videos/videos.css">
+    <script src="../../Login/login.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-container">
+            <div class="headerDivido">
+                <div class="header-left">
+                    <h1>Femdom Amateur</h1>
+                </div>
+                <div class="header-right">
+                    <!-- Enlace para abrir el modal -->
+                    <a href="#" id="openModal" class="login-button">
+                        <img src="/fotos/log.png" alt="Iniciar Sesión" />
+                    </a>
+                    <div style="display: flex; align-items: center;">
+                        <!-- Selector de idioma -->
+                        <div class="language-dropdown" style="position: relative;">
+                            <button id="languageButton" class="language-main-button">
+                                <span>ES</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+                                    alt="ES" class="flag">
+                            </button>
+                            <div id="languageOptions" class="language-options">
+                                <button class="language-option" data-lang="en">
+                                    <span>EN</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"
+                                        alt="EN" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="es">
+                                    <span>ES</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+                                        alt="ES" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="fr">
+                                    <span>FR</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+                                        alt="FR" class="flag">
+                                </button>
+                                <button class="language-option" data-lang="gr">
+                                    <span>GR</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png"
+                                        alt="GR" class="flag">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" data-translate="inicio">Inicio</a></li>
+                <li><a href="../videos/paginacion/videos.html" data-translate="videos">Videos</a></li>
+                <li><a href="../categorias/categorias.html" data-translate="categorias">Categorías</a></li>
+                <li><a href="../contactos/contactos.html" class="activo" data-translate="contactos">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Formulario de búsqueda -->
+    <div class="cambiarTamaño">
+        <form class="search-form" action="../../search/search.html" method="GET">
+            <div class="form-item">
+                <input type="text" name="query" class="search-input" placeholder="Buscar Videos"
+                    data-translate-placeholder="placeholder_search">
+            </div>
+            <!-- Botón en la segunda columna -->
+            <div class="form-item">
+                <button type="submit" class="search-button">
+                    <img src="../../fotos/lupa-icon.png" alt="Buscar" class="button-image">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- Sección de contacto -->
+    <section id="contactos">
+        <h2 data-translate="contacto">Contacto</h2>
+        <p data-translate="preguntaContacto">¿Tienes preguntas o sugerencias? Por favor, rellena el formulario y nos
+            pondremos en contacto contigo lo antes posible.</p>
+
+        <!-- Formulario de contacto -->
+        <form id="contactForm">
+            <!-- Campo para el título -->
+            <label for="titulo" data-translate="tituloMensaje">Título del mensaje:</label>
+            <input type="text" id="titulo" name="titulo" data-translate-placeholder="EscribeTitu"
+                placeholder="Escribe el título de tu mensaje" required>
+
+            <!-- Campo para la descripción -->
+            <label for="descripcion" data-translate="Descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="5" data-translate-placeholder="EscribeDesc"
+                placeholder="Escribe aquí la descripción de tu mensaje" required></textarea>
+
+
+            <!-- Botón para enviar -->
+            <button type="submit" data-translate="Enviar">Enviar</button>
+        </form>
+    </section>
+    <!-- Contenedor del modal de login -->
+    <div id="modal-containerIniciarSession"></div>
+
+    <!-- Contenedor del modal de crear cuenta -->
+    <div id="modal-containerCreateAccount"></div>
+    <script src="../verification-age/age-verification.js"></script>
+    <!-- Pie de página -->
+    <footer>
+        <p data-translate="footer_message">&copy; 2024 Femdom Amateur World. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script src="../../translate.js"></script>
+<script src="../indexPersonal.js"></script>
+<script src="contactos.js"></script>
+
+
+
+</html>
